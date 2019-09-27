@@ -15,7 +15,7 @@ export class LoginPage {
   }
 
   goToTabsPage(){
-    this.navCtrl.push(HomePage)
+    this.navCtrl.push(TabsPage)
   }
 
 

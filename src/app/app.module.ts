@@ -14,14 +14,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { FeedPageModule } from '../pages/feed/feed.module';
 import { IntroPageModule } from '../pages/intro/intro.module';
 import { LoginPageModule } from '../pages/login/login.module';
+import { UploadPage } from '../pages/upload/upload';
 
 @NgModule({
   declarations: [
     MyApp,
+    UploadPage,
     //AboutPage,
     //ContactPage,
     HomePage,
     TabsPage,
+
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { LoginPageModule } from '../pages/login/login.module';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    UploadPage,
     //AboutPage,
     //ContactPage,
     HomePage,

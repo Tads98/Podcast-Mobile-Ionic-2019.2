@@ -8,46 +8,54 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+import { SettingsPage } from '../pages/settings/settings';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FeedPageModule } from '../pages/feed/feed.module';
 import { IntroPageModule } from '../pages/intro/intro.module';
 import { LoginPageModule } from '../pages/login/login.module';
+import { SettingsPageModule } from '../pages/settings/settings.module';
 import { UploadPage } from '../pages/upload/upload';
 
 @NgModule({
   declarations: [
+    
     MyApp,
     UploadPage,
-    //AboutPage,
-    //ContactPage,
     HomePage,
     TabsPage,
+    SettingsPage,
 
   ],
+
   imports: [
+
     BrowserModule,
     IonicModule.forRoot(MyApp),
     FeedPageModule,
     IntroPageModule,
-    LoginPageModule
+    LoginPageModule,
 
   ],
+  
   bootstrap: [IonicApp],
+  
   entryComponents: [
     MyApp,
     UploadPage,
-    //AboutPage,
-    //ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    SettingsPage,
+    
   ],
+  
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
+  
 })
 export class AppModule {}

@@ -1,3 +1,16 @@
 page-upload {
+    /*.Image img {
+        height: 80%;
+        width: auto;
+    }
+    .button-inner{
+        height: 100px;
+        
+    }
+    .slide-zoom{
+        height: 100px;
+    }*/
+
+    #upload_file{width:0.1px;height:0.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1;}
 
 }

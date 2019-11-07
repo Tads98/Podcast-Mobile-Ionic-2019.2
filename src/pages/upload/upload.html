@@ -5,15 +5,29 @@
   Ionic pages and navigation.
 -->
 
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Upload</ion-title>
+  </ion-navbar>
+
+</ion-header>
 
 <ion-content padding>
-  <ion-slides pager>
+  
+  <ion-slides class="Image">
 
-    <ion-slide class="slide_image" >
-      <img src="assets/imagens/Upload.png" alt="">
-      <h2>Upload</h2>
-    </ion-slide>
-
+    <ion-slide>
+      <!--<button ion-button (click)="abrirTela" full clear large><img src="assets/imagens/Upload.png" alt=""></button>-->
+    
+      <!--<a href="uploadS"><input type="image" src="assets/imagens/Upload.png" alt="Submit" width="100" height="100"></a>    
+      <h4>Faça aqui o upload de seus episodios</h4>
+      <a type="file">Behold! I'm a clicable div!</a>-->
+      <input type="file" id="upload_file" name="upload_file" />
+      <label id="upload_btn" for="upload_file"><img src="assets/imagens/Upload.png"/></label>
+      <h4>Faça aqui o upload de seus episodios</h4>   
+    </ion-slide>    
   </ion-slides>
+  
 
 </ion-content>
